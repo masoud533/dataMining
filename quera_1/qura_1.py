@@ -22,7 +22,6 @@ data3['persent'] = (data2['outcome'] / data3['playType']) * 100
 print(f'{data3[data3["persent"] == data3["persent"].max()].index.values[0]},{data3[data3["persent"] == data3["persent"].min()].index.values[0]}')
 des0 = []
 for i in range(0 ,len(data)):
-  des0.append(round((((0 - data.iloc[i]['x']) ** 2) + ((45 - data.iloc[i]['y']) **2)) ** 0.5))
-  des0.append(round((((120 - data.iloc[i]['x']) ** 2) + ((45 - data.iloc[i]['y']) **2)) ** 0.5))
+  des0.append(round((((0 - data.iloc[i]['x']) ** 2) + ((0 - data.iloc[i]['y']) **2)) ** 0.5))
 print(max(des0))
 
